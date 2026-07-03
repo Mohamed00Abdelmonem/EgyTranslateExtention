@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="light">
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="icon.png" alt="Logo" class="logo">
+        <h2>EgyTranslat</h2>
+      </div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <svg id="sun-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      </button>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="wordInput" placeholder="Type an English word..." autocomplete="off" spellcheck="false" />
+      <button id="searchBtn" class="search-icon-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+      </button>
+    </div>
+
+    <div id="loader" class="hidden">
+      <div class="spinner"></div>
+      <span>Translating...</span>
+    </div>
+
+    <div id="result" class="hidden slide-up">
+      <div class="word-header">
+        <h3 id="origWord"></h3>
+        <button id="speakBtn" class="icon-btn small-icon" aria-label="Listen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+      </div>
+      
+      <div class="card">
+        <div class="meaning-group highlight-group">
+          <span class="label">Egyptian Meaning</span>
+          <p id="arMeaning" dir="rtl"></p>
+        </div>
+      </div>
+
+      <div class="card secondary-card">
+        <div class="meaning-group">
+          <span class="label">English Definition</span>
+          <p id="enDef"></p>
+        </div>
+        <div class="meaning-group">
+          <span class="label">Example</span>
+          <p id="enExample" class="example-text"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="error" class="hidden slide-up"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

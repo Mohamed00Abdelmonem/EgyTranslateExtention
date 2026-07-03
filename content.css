@@ -1,0 +1,255 @@
+#egytranslat-modal {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  width: 350px !important;
+  background-color: #FAFAFA !important;
+  color: #171717 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  border: 1px solid #E5E5E5 !important;
+  overflow: hidden !important;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: block !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+#egytranslat-modal.dark-mode {
+  background-color: #121212 !important;
+  color: #F5F5F5 !important;
+  border-color: #333333 !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4) !important;
+}
+
+#egytranslat-modal.egy-show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+#egy-header {
+  background-color: transparent !important;
+  padding: 16px 20px 12px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+#egy-title-container {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.egy-logo {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 6px !important;
+}
+
+#egy-title {
+  margin: 0 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #171717 !important;
+  text-transform: capitalize !important;
+}
+
+.egy-icon-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #737373 !important;
+  cursor: pointer !important;
+  padding: 4px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s !important;
+}
+
+.egy-icon-btn:hover {
+  background: #E5E5E5 !important;
+  color: #171717 !important;
+}
+
+#egytranslat-modal.dark-mode .egy-icon-btn {
+  color: #A3A3A3 !important;
+}
+
+#egytranslat-modal.dark-mode .egy-icon-btn:hover {
+  background: #333333 !important;
+  color: #FFFFFF !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#egytranslat-modal.dark-mode #egy-title {
+  color: #F5F5F5 !important;
+}
+
+#egy-close {
+  cursor: pointer !important;
+  background: #F3F4F6 !important;
+  border: none !important;
+  color: #737373 !important;
+  font-size: 18px !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  transition: all 0.2s !important;
+}
+
+#egytranslat-modal.dark-mode #egy-close {
+  background: #262626 !important;
+  color: #A3A3A3 !important;
+}
+
+#egy-close:hover {
+  background: #E5E5E5 !important;
+  color: #171717 !important;
+}
+
+#egytranslat-modal.dark-mode #egy-close:hover {
+  background: #333333 !important;
+  color: #FFFFFF !important;
+}
+
+#egy-content {
+  padding: 0 20px 20px !important;
+}
+
+.egy-card {
+  background: #FFFFFF !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+  border: 1px solid #E5E5E5 !important;
+  margin-bottom: 12px !important;
+}
+
+#egytranslat-modal.dark-mode .egy-card {
+  background: #1E1E1E !important;
+  border-color: #333333 !important;
+}
+
+.egy-card.secondary {
+  background: transparent !important;
+  border: 1px dashed #E5E5E5 !important;
+  box-shadow: none !important;
+}
+
+#egytranslat-modal.dark-mode .egy-card.secondary {
+  border-color: #404040 !important;
+}
+
+.egy-group {
+  margin-bottom: 12px !important;
+}
+
+.egy-group:last-child {
+  margin-bottom: 0 !important;
+}
+
+.egy-label {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #737373 !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+#egytranslat-modal.dark-mode .egy-label {
+  color: #A3A3A3 !important;
+}
+
+#egy-body p {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #171717 !important;
+}
+
+#egytranslat-modal.dark-mode #egy-body p {
+  color: #F5F5F5 !important;
+}
+
+#egy-ar {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #171717 !important;
+  text-align: right !important;
+}
+
+#egytranslat-modal.dark-mode #egy-ar {
+  color: #3B82F6 !important;
+}
+
+.egy-example {
+  font-style: italic !important;
+  color: #737373 !important;
+}
+
+#egytranslat-modal.dark-mode .egy-example {
+  color: #A3A3A3 !important;
+}
+
+#egy-loader {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 20px !important;
+  color: #737373 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+#egytranslat-modal.dark-mode #egy-loader {
+  color: #A3A3A3 !important;
+}
+
+.egy-spinner {
+  width: 24px !important;
+  height: 24px !important;
+  border: 3px solid #E5E5E5 !important;
+  border-top-color: #3B82F6 !important;
+  border-radius: 50% !important;
+  animation: egy-spin 1s linear infinite !important;
+}
+
+#egytranslat-modal.dark-mode .egy-spinner {
+  border-color: #333333 !important;
+  border-top-color: #3B82F6 !important;
+}
+
+@keyframes egy-spin {
+  to { transform: rotate(360deg) !important; }
+}
+
+#egy-error {
+  padding: 16px !important;
+  text-align: center !important;
+  color: #EF4444 !important;
+  background-color: #FEE2E2 !important;
+  border-radius: 12px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+#egytranslat-modal.dark-mode #egy-error {
+  color: #F87171 !important;
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
